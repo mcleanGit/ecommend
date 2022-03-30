@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('../ecommend/node_modules/dotenv/types').config();
 
 const Sequelize = require('sequelize');
 
