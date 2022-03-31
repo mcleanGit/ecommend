@@ -1,12 +1,15 @@
 # 13 Object Relational Mapping (ORM): E-commerce Back End
 
+## Background
+
 Internet retail, also known as e-commerce, is the largest sector of the electronics industry, having generated an estimated US$29 trillion in 2017 (Source: United Nations Conference on Trade and Development). E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to the prevalence of these platforms, developers should understand the fundamental architecture of e-commerce sites.
 
-Your challenge is to build the back end for an e-commerce site. You’ll take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
 
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
+## Specific Task
 
-Before you start, clone [the starter code](https://github.com/coding-boot-camp/fantastic-umbrella).
+The challenge is to build the back end for an e-commerce site. The application takes a working Express.js API and configures it to use Sequelize to interact with a MySQL database.
+
+Because the application is not deployed, a walkthrough video is provided that demonstrates its functionality and that all acceptance criteria are met. A link to the video is provided and added to this README.
 
 
 ## User Story
@@ -16,6 +19,7 @@ AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
   SO THAT my company can compete with other e-commerce companies
 ```
+
 
 ## Acceptance Criteria
 
@@ -33,9 +37,11 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
   THEN I am able to successfully create, update, and delete data in my database
 ```
 
+
 ## Mock-Up
 
-The following animations show examples of the application's API routes being tested in Insomnia.
+The following animations were provided with the assignment and show examples of the application's API routes being tested in Insomnia. 
+Note: the finished application video provides parallel walkthroughs in Insomnia to demonstrate these same GET, POST, PUT, and DELETE routes.
 
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
 
@@ -49,18 +55,17 @@ The final animation shows the POST, PUT, and DELETE routes for categories being 
 
 ![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+Note: The walkthrough video for the finished application also demonstrates the POST, PUT, and DELETE routes for products and tags as tested in Insomnia.
 
 
 ## Getting Started
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
+Following the starter-code, the application installs mysql2 and sequelize to connect the Express.js API to the MySQL database. The `schema.sql` file in the `db` folder creates the database using MySQL shell commands. In addition, the dotenv package is installed to use environment variable to store sensitive data, such as the MySQL username, password, and database name.
 
-Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
 
 ### Database Models
 
-Your database should contain the following four models, including the requirements listed for each model:
+The following information outlines the requirements for the four Models (Category, Product, Tag, ProductTag) of the database:
 
 * `Category`
 
@@ -130,7 +135,7 @@ Your database should contain the following four models, including the requiremen
 
 ### Associations
 
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
+The Sequelize code also executes association methods on the Models to create the following relationships between them:
 
 * `Product` belongs to `Category`, as a category can have multiple products but a product can only belong to one category.
 
@@ -140,23 +145,20 @@ You'll need to execute association methods on your Sequelize models to create th
 
 * `Tag` belongs to many `Product` models.
 
-**Hint**: Make sure you set up foreign key relationships that match the column we created in the respective models.
 
 ### Fill out the API Routes to Perform RESTful CRUD Operations
 
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
+The application completes the starter-code routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete `CRUD` operations using the Sequelize models.
 
-**Note**: The functionality for creating the many-to-many relationship for products is already done for you.
-
-**Hint**: Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
 
 ### Seed the Database
 
 After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
 
+
 ### Sync Sequelize to the Database on Server Start
 
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
+Additional code is written in `server.js` to sync the Sequelize models to the MySQL database on server start.
 
 
 ## Review
@@ -164,8 +166,14 @@ Create the code needed in `server.js` to sync the Sequelize models to the MySQL 
 You are required to submit BOTH of the following for review:
 
 * A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
+Link to walkthrough video: vimeo...
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+URL of GitHub repository: https://github.com/mcleanGit/ecommend
+
+## Additional Note concerning the Repo
+* For information: I inadvertently retained the Develop *folder* (not a git branch) from the starter-code and worked within it, pushing a number of commits over several days. Realizing that the paths *in and to* the repo needed to be changed, I ended up making the adjustments as several global file moves and commits over a short period (2022-03-30) to change the destination of all the files and folders to `main`. Those commit messages typically say ("worked in Develop folder, moved to repo when completed"). This filepath correction unfortunately now fails to reflect the numerous step-by-step commits made earlier.
+
 
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
