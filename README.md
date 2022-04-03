@@ -9,7 +9,7 @@ Internet retail, also known as e-commerce, is the largest sector of the electron
 
 The challenge is to build the back end for an e-commerce site. The application takes a working Express.js API and configures it to use Sequelize to interact with a MySQL database.
 
-Because the application is not deployed, a walkthrough video is provided that demonstrates its functionality and that all acceptance criteria are met. A link to the video is provided and added to this README.
+Because the application is not deployed, a walkthrough video is provided that demonstrates its functionality and that all acceptance criteria are met. A link to the video is provided and added at the end of this README.
 
 
 ## User Story
@@ -172,7 +172,7 @@ Link to walkthrough video: vimeo...
 URL of GitHub repository: https://github.com/mcleanGit/ecommend
 
 ## Additional Note concerning the Repo
-* For information: I inadvertently retained the Develop *folder* (not a git branch) from the starter-code and worked within it, pushing a number of commits over several days. Realizing that the paths *in and to* the repo needed to be changed, I ended up making the adjustments as several global file moves and commits over a short period (2022-03-30) to change the destination of all the files and folders to `main`. Those commit messages typically say ("worked in Develop folder, moved to repo when completed"). This filepath correction unfortunately now fails to reflect the numerous step-by-step commits made earlier.
+* For information: I inadvertently retained the Develop *folder* (not a git branch) from the starter-code and worked within it, pushing a number of commits over several days. Realizing that the paths *in and to* the repo needed to be changed, I ended up making the adjustments as several global file moves and commits over a short period (2022-03-30) to change the destination of all the files and folders to `main`. Those commit messages typically say ("worked in Develop folder, moved to repo when completed"). This filepath correction unfortunately now fails to reflect the numerous step-by-step commits made earlier, although a number of subsequent changes and commits occurred subsequently in completing the project.
 
 
 - - -
