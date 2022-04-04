@@ -167,6 +167,8 @@ You are required to submit BOTH of the following for review:
 
 * A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
 Link to walkthrough video: vimeo...
+https://vimeo.com/695791916/f153771905
+
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 URL of GitHub repository: https://github.com/mcleanGit/ecommend
